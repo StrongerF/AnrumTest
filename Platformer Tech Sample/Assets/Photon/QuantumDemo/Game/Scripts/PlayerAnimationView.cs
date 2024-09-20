@@ -25,8 +25,11 @@ public class PlayerAnimationView : MonoBehaviour
 
         Frame f = QuantumRunner.Default.Game.Frames.Predicted;
 
-        FPVector3 vec = f.Get<CharacterController3D>(_view.EntityRef).Velocity;
+        if (f.TryGet<CharacterController3D>(_view.EntityRef, out var controller))
+        {
+            FPVector3 vec = controller.Velocity;
 
-        _animator.SetFloat(_speed, vec == default ? 0f : 1f);
+            _animator.SetFloat(_speed, vec == default ? 0f : 1f);
+        }
     }
 }

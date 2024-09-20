@@ -1,0 +1,33 @@
+﻿asset CharacterHealthConfig;
+
+component CharacterHealth
+{
+    asset_ref<CharacterHealthConfig> Config;
+
+    [ExcludeFromPrototype]
+    FP CurrentHealth;
+    
+    [ExcludeFromPrototype]
+    bool IsDead;
+
+
+    [ExcludeFromPrototype]
+    FPVector3 PreviousVelocity;
+
+
+}
+
+
+event HealthUpdated
+{
+    entity_ref Entity;
+    FP HealthValue;
+}
+
+event PlayerDied
+{
+    entity_ref Entity;
+}
+
+signal OnCharacterDamaged(entity_ref character, FP damage);
+signal OnCharacterFallen(entity_ref character, Hit3D hit);

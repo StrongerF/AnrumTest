@@ -20,7 +20,7 @@ namespace Quantum
                 // player platform systems
                 new PlatformInertiaSystem(),
                 new PlatformFollowSystem(),
-                
+
                 new Core.CullingSystem3D(),
 
                 new Core.PhysicsSystem3D(),
@@ -31,6 +31,8 @@ namespace Quantum
                 new PlayerSpawnSystem(),
                 new MovementSystem(),
                 new PlayerHeadSystem(),
+                new CharacterHealthSystem(),
+                new FallDamageSystem(),
             };
         }
     }

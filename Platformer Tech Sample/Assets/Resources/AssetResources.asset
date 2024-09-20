@@ -66,11 +66,21 @@ MonoBehaviour:
         Id:
           Value: 2325426274023209007
       ResourcePath: DB/PlayerCharacter
+    - Path: Resources/DB/PlayerConfigs/DefaultCharacterHealthConfig
+      AssetRef:
+        Id:
+          Value: 2395881685630150577
+      ResourcePath: DB/PlayerConfigs/DefaultCharacterHealthConfig
     - Path: Resources/DB/Map1_mesh
       AssetRef:
         Id:
           Value: 2640079038811519263
       ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/PlatformConfigs/PlatformDemoConfig5
+      AssetRef:
+        Id:
+          Value: 2817648477218031712
+      ResourcePath: DB/PlatformConfigs/PlatformDemoConfig5
     - Path: Resources/DB/Configs/DefaultCharacterController3D
       AssetRef:
         Id:
