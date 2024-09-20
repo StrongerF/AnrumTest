@@ -90,6 +90,7 @@ MonoBehaviour:
         TangentMode: 0
         TangentModeLeft: 1
         TangentModeRight: 1
+        WeightedMode: 0
       - Time:
           RawValue: 327680
         Value:
@@ -101,6 +102,7 @@ MonoBehaviour:
         TangentMode: 0
         TangentModeLeft: 1
         TangentModeRight: 1
+        WeightedMode: 0
     ZMovementCurve:
       Samples: []
       PreWrapMode: 0
@@ -169,6 +171,7 @@ MonoBehaviour:
         TangentMode: 0
         TangentModeLeft: 1
         TangentModeRight: 1
+        WeightedMode: 0
       - Time:
           RawValue: 65536
         Value:
@@ -180,3 +183,4 @@ MonoBehaviour:
         TangentMode: 0
         TangentModeLeft: 1
         TangentModeRight: 1
+        WeightedMode: 0

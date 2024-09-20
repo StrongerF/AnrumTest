@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7983938273834229106}
   - component: {fileID: 7111197849992158610}
   - component: {fileID: 8735769970721242690}
+  - component: {fileID: 7855650413797174827}
+  - component: {fileID: 7549715606424210105}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -118,9 +120,9 @@ MonoBehaviour:
       IsPersistent: 1
       CompoundShapes: []
       IsSetFromSourceCollider: 0
-    Layer: 6
+    Layer: 0
     CallbackFlags:
-      Value: 0
+      Value: 4095
   PhysicsBody:
     IsEnabled: 0
     Version2D: 2
@@ -280,6 +282,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1395315466474552259}
+--- !u!114 &7855650413797174827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440238943082942806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889e648a34107ac4da5e40865ff44981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Config:
+      Id:
+        Value: 2395881685630150577
+--- !u!114 &7549715606424210105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440238943082942806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4411f3f2ca09cd54aa18868689918b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1395315466465054371
 PrefabInstance:
   m_ObjectHideFlags: 0

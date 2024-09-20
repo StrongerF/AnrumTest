@@ -92,6 +92,12 @@ namespace Quantum.Platformer
                 controller->LastVelocity = FPVector3.Zero;
             }
 
+            // signals and events in the FrameBase are not available
+            if (f is Frame frame)
+            {
+                frame.Signals.OnCharacterFallen(character, hit);
+            }
+
             return true;
         }
 

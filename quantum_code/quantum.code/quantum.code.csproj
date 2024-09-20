@@ -77,10 +77,14 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
+    <Compile Include="Platformer\CharacterHealth.User.cs" />
+    <Compile Include="Platformer\CharacterHealthConfig.cs" />
     <Compile Include="Platformer\Platform.User.cs" />
     <Compile Include="Platformer\PlatformConfig.cs" />
     <Compile Include="Platformer\PlayerPlatformController.User.cs" />
     <Compile Include="Platformer\PlatformControllerConfig.cs" />
+    <Compile Include="Platformer\Systems\CharacterHealthSystem.cs" />
+    <Compile Include="Platformer\Systems\FallDamageSystem.cs" />
     <Compile Include="Platformer\Systems\MovementSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformFollowSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformInertiaSystem.cs" />
@@ -100,6 +104,7 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Platformer\DSL\CharacterHealth.qtn" />
     <None Include="Platformer\DSL\Input.qtn" />
     <None Include="Platformer\DSL\PlayerLink.qtn" />
   </ItemGroup>
@@ -108,6 +113,7 @@
     <Content Include="Platformer\DSL\PlatformAxisFlags.qtn" />
     <Content Include="Platformer\DSL\PlayerPlatformController.qtn" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent Condition="'$(OS)' == 'Windows_NT'">"$(ProjectDir)..\..\tools\codegen_unity\quantum.codegen.unity.host.exe" "$(TargetDir)\quantum.code.dll" "$(ProjectDir)..\..\Platformer Tech Sample\Assets"</PostBuildEvent>
